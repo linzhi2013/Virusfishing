@@ -82,7 +82,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 	(gi_taxid_nucl.dmp.gz, names.dmp & nodes.dmp)   
 	`ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz`  
 	`ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz`   
-\#Note: Creat symbolic links for databases in /Virusfishing.V1.0/database, 
+	\#Note: Creat symbolic links for databases in `/Virusfishing.V1.0/database`, 
 	so that you can use the default parameter in some steps. 
 	`ln -s /dir/names.dmp /Virusfishing.V1.0/database/tax/names.dmp`
 
