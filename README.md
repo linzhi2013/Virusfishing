@@ -6,7 +6,7 @@ Virusfishing is a virus screening pipeline for 1000 Insect Transcriptome Evoluti
 
 Include 3 steps: 
 
-1. **Search**:   search virus sequences from assembly
+1. **Search**:   search known virus sequences from assembly
 2. **Assemble**: do virus assembly based on reference
 3. **Splicing**: identify splicing pattern of assembly
 
@@ -19,10 +19,10 @@ Virusfishing version 1.0 201604
 ###4. Source code
 ####Wrappper script
 
-`Virusfishing.py`: the wrapper script to run other Perl scripts to do the work you choose.
+**`Virusfishing.py`**: the wrapper script to run other Perl scripts to do the work you choose.
 
-Eight Perl scripts in `Virusfishing.V1.0/bin/`
-####Search virus:
+Eight Perl scripts in folder `Virusfishing.V1.0/bin/`, including:
+####Search known virus:
 `Virus_Search.pl`: search viruses in assemblies     
 `Virus_false_removal.pl`: removal false positive according to the taxonomy   
 
@@ -64,7 +64,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 | -------- | --- |
 | Boost | www.boost.org/ |
 | PerlIO::gzip |search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm |
-|ParseFasta.pm & ParseFastq.pm | (already in `Virusfishing.V1.0/lib/`) |
+|ParseFasta.pm & ParseFastq.pm | (already in Virusfishing.V1.0/lib/) |
 
 ####Database
 1. **Virus database**
@@ -82,7 +82,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 	(gi_taxid_nucl.dmp.gz, names.dmp & nodes.dmp)   
 	`ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz`  
 	`ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz`   
-	\#Note: Creat symbolic links for databases in `/Virusfishing.V1.0/database`, 
+\#Note: Creat symbolic links for databases in /Virusfishing.V1.0/database, 
 	so that you can use the default parameter in some steps. 
 	`ln -s /dir/names.dmp /Virusfishing.V1.0/database/tax/names.dmp`
 
