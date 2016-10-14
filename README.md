@@ -49,12 +49,12 @@ You need to install following programs and add the software directories to your 
 
 | softwares | URL |
 |----------- | --- |
-| Blastall 2.2.26 | ftp.ncbi.nih.gov/blast/executables/blast+/2.2.26 |
-| BWA 0.7.10 | bio-bwa.sourceforge.net |
-| Bowtie2 (bowtie2-2.1.0 or higher) | bowtie-bio.sourceforge.net/bowtie2 |
-| TopHat2 (tophat-2.0.7 or higher) | ccb.jhu.edu/software/tophat |
-| SAMtools-0.1.19 (include vcfutils.pl & bcftools) | sourceforge.net/projects/samtools/files/samtools/0.1.19 |
-| RefTools | github.com/BGI-shenzhen/Reseqtools |
+| Blastall 2.2.26 | ftp://ftp.ncbi.nih.gov/blast/executables/blast+/2.2.26 |
+| BWA 0.7.10 | http://bio-bwa.sourceforge.net |
+| Bowtie2 (bowtie2-2.1.0 or higher) | https://sourceforge.net/projects/bowtie-bio/files/bowtie2/ |
+| TopHat2 (tophat-2.0.7 or higher) | http://ccb.jhu.edu/software/tophat/index.shtml |
+| SAMtools-0.1.19 (include vcfutils.pl & bcftools) | https://sourceforge.net/projects/samtools/files/samtools/0.1.19/ |
+| RefTools | https://github.com/BGI-shenzhen/Reseqtools |
 | Python version 3 or higher | www.python.org |
 
 ####Library
@@ -63,27 +63,27 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 | library | URL |
 | -------- | --- |
 | Boost | www.boost.org/ |
-| PerlIO::gzip |search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm |
+| PerlIO::gzip |http://search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm |
 |ParseFasta.pm & ParseFastq.pm | (already in Virusfishing.V1.0/lib/) |
 
 ####Database
 1. **Virus database**
 
-	`ftp.ncbi.nih.gov/blast/db/FASTA/`   
+	`ftp://ftp.ncbi.nih.gov/blast/db/FASTA/`   
 	Or NCBI viral gene annotation    
 	`ftp://ftp.ncbi.nih.gov/refseq/release/viral/`   
 	Or Your own virus database
 2. **Nt database**
 	
-	`ftp.ncbi.nih.gov/blast/db/FASTA/`   
-	If Nt database is too large for you, you can do the 2nd blastn in step 1 and step 2 online (`blast.ncbi.nlm.nih.gov/Blast.cgi`)
+	`ftp://ftp.ncbi.nih.gov/blast/db/FASTA/`   
+	If Nt database is too large for you, you can do the 2nd blastn in step 1 and step 2 online (`https://blast.ncbi.nlm.nih.gov/Blast.cgi`)
 	
 3. **Taxonomy database**   
 	(gi_taxid_nucl.dmp.gz, names.dmp & nodes.dmp)   
-	`ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz`  
-	`ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz`   
-\#Note: Creat symbolic links for databases in /Virusfishing.V1.0/database, 
-	so that you can use the default parameter in some steps. 
+	`ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz`  
+	`ftp://ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz`   
+*Note*: Creat symbolic links for databases in `/Virusfishing.V1.0/database`, 
+	so that you can use the default parameter in some steps:
 	`ln -s /dir/names.dmp /Virusfishing.V1.0/database/tax/names.dmp`
 
 ###6. EXAMPLES
