@@ -125,3 +125,5 @@ Chengran Zhou, Shanlin Liu, Wenhui Song, Guanliang Meng, Chentao Yang, Jinmin Ma
 ###10. LATEST RELEASE
 Version 1.0 201604
 
+### 11. Copyright
+This package is released under version 3 of the GNU General Public License (GPLv3). Please refer to `https://www.gnu.org/licenses/gpl-3.0.html`.
