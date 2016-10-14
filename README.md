@@ -64,7 +64,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 | -------- | --- |
 | Boost | www.boost.org/ |
 | PerlIO::gzip |search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm |
-|ParseFasta.pm & ParseFastq.pm | (already in Virusfishing.V1.0/lib/) |
+|ParseFasta.pm & ParseFastq.pm | (already in `Virusfishing.V1.0/lib/`) |
 
 ####Database
 1. **Virus database**
