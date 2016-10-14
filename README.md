@@ -120,7 +120,7 @@ songwenhui at genomics dot cn
 majinmin at genomics dot cn
 
 ###9. CITATION
-*Chengran Zhou<sup>1,2,3</sup>, Shanlin Liu<sup>2,3</sup>, Wenhui Song<sup>2,3</sup>, Guanliang Meng<sup>2,3</sup>, Chentao Yang<sup>2,3</sup>, Jinmin Ma<sup>3</sup>, Liang Wang<sup>6</sup>, Shan Gao<sup>6</sup>, Yun Zhao<sup>1,\* </sup>, Hui Wang<sup>3,4,5,\*</sup>, Xin Zhou<sup>7,8,\*</sup>(2016) Revealing RNA splicing diversity of insect host from co-expressed virus genes*. Unpublished.
+Chengran Zhou<sup>1,2,3</sup>, Shanlin Liu<sup>2,3</sup>, Wenhui Song<sup>2,3</sup>, Guanliang Meng<sup>2,3</sup>, Chentao Yang<sup>2,3</sup>, Jinmin Ma<sup>3</sup>, Liang Wang<sup>6</sup>, Shan Gao<sup>6</sup>, Yun Zhao<sup>1,\* </sup>, Hui Wang<sup>3,4,5,\*</sup>, Xin Zhou<sup>7,8,\*</sup>(2016) *Revealing RNA splicing diversity of insect host from co-expressed virus genes*. Unpublished.
 
 ###10. LATEST RELEASE
 Version 1.0 201604
