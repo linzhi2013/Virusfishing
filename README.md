@@ -11,7 +11,8 @@ Include 3 steps:
 3. **Splicing**: identify splicing pattern of assembly
 
 ### 2. DOWNLOAD
-Virusfishing version 1.0 201604
+Virusfishing version 1.0 201604   
+[https://github.com/linzhi2013/Virusfishing/tree/master](https://github.com/linzhi2013/Virusfishing/tree/master)
 
 ### 3. INSTALLATION
 `tar -zxvf Virusfishing.V1.0.tar.gz`
