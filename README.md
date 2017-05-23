@@ -1,6 +1,6 @@
 Virusfishing version 1.0 (201604)
 
-###1. DESCRIPTION
+### 1. DESCRIPTION
 
 Virusfishing is a virus screening pipeline for 1000 Insect Transcriptome Evolution (1KITE) project to search viruses, construct viral genomes and screen for the expressed virus genes and discover viral splicing patterns. Virusfishing also can be used in other next generation sequencing data. 
 
@@ -10,38 +10,38 @@ Include 3 steps:
 2. **Assemble**: do virus assembly based on reference
 3. **Splicing**: identify splicing pattern of assembly
 
-###2. DOWNLOAD
+### 2. DOWNLOAD
 Virusfishing version 1.0 201604
 
-###3. INSTALLATION
+### 3. INSTALLATION
 `tar -zxvf Virusfishing.V1.0.tar.gz`
 
-###4. Source code
+### 4. Source code
 ####Wrappper script
 
 **`Virusfishing.py`**: the wrapper script to run other Perl scripts to do the work you choose.
 
 Eight Perl scripts in folder `Virusfishing.V1.0/bin/`, including:
-####Search known virus:
+#### Search known virus:
 `Virus_Search.pl`: search viruses in assemblies     
 `Virus_false_removal.pl`: removal false positive according to the taxonomy   
 
-####Assemble viral gnome:
+#### Assemble viral gnome:
 `Ref_Based_Genome_Assemble.pl`: assemble viral genomes based on viral reference    
 `fq2fa.pl`: change fastq files into fasta files
 		
-####Detect splicing junctions:
+#### Detect splicing junctions:
 `Splicing_Search.pl`: find introns and exon-exon splice junctions from the clean alignments and give out summaries
 
-####Summarize:
+#### Summarize:
 `Virus_Coverage.pl`: obtain the best-hit related sequences, and calculate the coverage of assembled sequences and viral sequences from the blast results.     
 `Alignmentout_Sum.pl`: filter multiple alignment file (support sam, bam, soap or map type) and make a summary for it.
 		
-####Classify:
+#### Classify:
 `Find_NCBItax_from_name.pl`: obtain the NCBI classification
 
-###5. Pre-requisites
-####Software
+### 5. Pre-requisites
+#### Software
 You need to install following programs and add the software directories to your `$PATH`:
 	
 	export PATH=:$PATH:$softwaredir # for sh or bash users
@@ -57,7 +57,7 @@ You need to install following programs and add the software directories to your 
 | RefTools | https://github.com/BGI-shenzhen/Reseqtools |
 | Python version 3 or higher | www.python.org |
 
-####Library
+#### Library
 You need to install following libraries directories to your `$LD_LIBRARY_PATH`: `export LD_LIBRARY_PATH=.:$boostdir`
 
 | library | URL |
@@ -66,7 +66,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 | PerlIO::gzip |http://search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm |
 |ParseFasta.pm & ParseFastq.pm | (already in `Virusfishing.V1.0/lib/`) |
 
-####Database
+#### Database
 1. **Virus database**
 
 	`ftp://ftp.ncbi.nih.gov/blast/db/FASTA/`   
@@ -86,7 +86,7 @@ You need to install following libraries directories to your `$LD_LIBRARY_PATH`: 
 	so that you can use the default parameter in some steps:
 	`ln -s /dir/names.dmp /Virusfishing.V1.0/database/tax/names.dmp`
 
-###6. EXAMPLES
+### 6. EXAMPLES
 Virus search: 
 	
 	python Virusfishing.V1.0/Virusfishing.py search 
@@ -109,20 +109,20 @@ Virus search without a NT database:
 	
 Then, use the candidate viral sequences to blastn against NT database online
 
-###7. CONTRIBUTORS
+### 7. CONTRIBUTORS
 Chengran Zhou; Guanliang Meng; Songwen Hui; Jinmin Ma
 
-###8. CONTACT US
+### 8. CONTACT US
 Email:    
 zhouchengran at genomics dot cn   
 mengguanliang at genomics dot cn   
 songwenhui at genomics dot cn   
 majinmin at genomics dot cn
 
-###9. CITATION
+### 9. CITATION
 Chengran Zhou, Shanlin Liu, Wenhui Song, Guanliang Meng, Chentao Yang, Jinmin Ma, Liang Wang, Shan Gao, Yun Zhao, Hui Wang, Xin Zhou (2016) *Revealing RNA splicing diversity of insect host from co-expressed virus genes*. Unpublished.
 
-###10. LATEST RELEASE
+### 10. LATEST RELEASE
 Version 1.0 201604
 
 ### 11. Copyright
