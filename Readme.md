@@ -94,10 +94,15 @@ You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 
 # EXAMPLES
 1. Virus search: 
+	
 	python Virusfishing.V1.1/Virusfishing.py search 
+	
 2. Viral genome assemble:
+	
 	python Virusfishing.V1.1/Virusfishing.py assemble
+	
 3. Splice junction detection using raw data:
+	
 	python Virusfishing.V1.1/Virusfishing.py splicing
 
 4. Only create a shell script for summarizing the alignment file:
