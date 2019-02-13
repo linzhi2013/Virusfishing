@@ -69,19 +69,25 @@ You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 	ParseFasta.pm & ParseFastq.pm (already in Virusfishing.V1.1/lib/)
 
 ## Database
-	1: Virus database
+### 1. Virus database
+
 	ftp.ncbi.nih.gov/blast/db/FASTA/
 	Or NCBI viral gene annotation
 	ftp://ftp.ncbi.nih.gov/refseq/release/viral/
 	Or Your own virus database
-	2: Nt database
+	
+### 2. Nt database
+
 	ftp.ncbi.nih.gov/blast/db/FASTA/
 	If Nt database is too large for you, you can do the 2nd blastn in step 1 and step 2 online. 
 	blast.ncbi.nlm.nih.gov/Blast.cgi
-	3: Taxonomy database
+	
+### 3. Taxonomy database
+
 	(gi_taxid_nucl.dmp.gz, names.dmp & nodes.dmp)
 	ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 	ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz
+	
 	#Note: Creat symbolic links for databases in /Virusfishing.V1.1/database, 
 	so that you can use the default parameter in some steps. 
 	"ln -s /dir/names.dmp /Virusfishing.V1.1/database/tax/names.dmp"
