@@ -5,15 +5,16 @@ Virusfishing version 1.1 (201801)
 Virusfishing is a virus screening pipeline for 1000 Insect Transcriptome Evolution (1KITE) project to search viruses, construct viral genomes and screen for the expressed virus genes and discover viral splicing patterns. Virusfishing also can be used in other next generation sequencing data. 
 
 Include 3 steps: 
- Search:   search virus sequences from assembly
- Assemble: do virus assembly based on reference
- Splicing: identify splicing pattern of assembly
+ 1. Search:   search virus sequences from assembly
+ 2. Assemble: do virus assembly based on reference
+ 3. Splicing: identify splicing pattern of assembly
 
 # DOWNLOAD
 Virusfishing version 1.1 201801
 
 # INSTALLATION
-tar -zxvf Virusfishing.V1.1.tar.gz
+
+	tar -zxvf Virusfishing.V1.1.tar.gz
 
 # Source code
 ## Wrappper script
@@ -36,7 +37,8 @@ tar -zxvf Virusfishing.V1.1.tar.gz
 
 # Pre-requisites
 ## Software
-	You need to install following programs and add the software directories to your $PATH:
+You need to install following programs and add the software directories to your $PATH:
+
 	export PATH=:$PATH:$softwaredir # for sh or bash users
 	setenv PATH .:$PATH:$softwaredir # for csh users
 
@@ -57,6 +59,7 @@ tar -zxvf Virusfishing.V1.1.tar.gz
 
 ## Library
 You need to install following libraries directories to your $ LD_LIBRARY_PATH:
+	
 	export LD_LIBRARY_PATH=.:$boostdir
 
 	Boost
@@ -84,17 +87,21 @@ You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 	"ln -s /dir/names.dmp /Virusfishing.V1.1/database/tax/names.dmp"
 
 # EXAMPLES
-## Virus search: 
+1. Virus search: 
 	python Virusfishing.V1.1/Virusfishing.py search 
-## Viral genome assemble:
+2. Viral genome assemble:
 	python Virusfishing.V1.1/Virusfishing.py assemble
-## Splice junction detection using raw data:
+3. Splice junction detection using raw data:
 	python Virusfishing.V1.1/Virusfishing.py splicing
 
-Only create a shell script for summarizing the alignment file:
+4. Only create a shell script for summarizing the alignment file:
+
 	perl Virusfishing.V1.1/bin/Alignmentout_Stat.pl -in in.map -ref ref.fa -type map
-Virus search without a NT database:
+	
+5. Virus search without a NT database:
+
 	Perl Virusfishing.V1.1/bin/Virus_Search.pl -i assemble.fa -v virus.db -outpre candidateviral
+
 Then, use the candidate viral sequences to blastn against NT database online
 
 # CONTRIBUTORS
