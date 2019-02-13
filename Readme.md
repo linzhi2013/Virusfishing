@@ -1,6 +1,6 @@
 Virusfishing version 1.1 (201801)
 
-DESCRIPTION
+# DESCRIPTION
 
 Virusfishing is a virus screening pipeline for 1000 Insect Transcriptome Evolution (1KITE) project to search viruses, construct viral genomes and screen for the expressed virus genes and discover viral splicing patterns. Virusfishing also can be used in other next generation sequencing data. 
 
@@ -9,17 +9,17 @@ Include 3 steps:
  Assemble: do virus assembly based on reference
  Splicing: identify splicing pattern of assembly
 
-DOWNLOAD
+# DOWNLOAD
 Virusfishing version 1.1 201801
 
-INSTALLATION
+# INSTALLATION
 tar -zxvf Virusfishing.V1.1.tar.gz
 
-Source code
-Wrappper script
+# Source code
+## Wrappper script
 	Virusfishing.py: the wrapper script to run other Perl scripts to do the work you choose.
 
-Eight Perl scripts in Virusfishing.V1.1/bin/
+## Eight Perl scripts in Virusfishing.V1.1/bin/
 	Search virus:
 		Virus_Search.pl: search viruses in assemblies
 		Virus_false_removal.pl: removal false positive according to the taxonomy
@@ -34,8 +34,8 @@ Eight Perl scripts in Virusfishing.V1.1/bin/
 	Classify:
 		Find_NCBItax_from_name.pl: obtain the NCBI classification
 
-Pre-requisites
-Software
+# Pre-requisites
+## Software
 	You need to install following programs and add the software directories to your $PATH:
 	export PATH=:$PATH:$softwaredir # for sh or bash users
 	setenv PATH .:$PATH:$softwaredir # for csh users
@@ -55,7 +55,7 @@ Software
 	Python version 3 or higher
 	www.python.org
 
-Library
+## Library
 You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 	export LD_LIBRARY_PATH=.:$boostdir
 
@@ -65,7 +65,7 @@ You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 	search.cpan.org/~nwclark/PerlIO-gzip-0.19/gzip.pm
 	ParseFasta.pm & ParseFastq.pm (already in Virusfishing.V1.1/lib/)
 
-Database
+## Database
 	1: Virus database
 	ftp.ncbi.nih.gov/blast/db/FASTA/
 	Or NCBI viral gene annotation
@@ -83,12 +83,12 @@ Database
 	so that you can use the default parameter in some steps. 
 	"ln -s /dir/names.dmp /Virusfishing.V1.1/database/tax/names.dmp"
 
-EXAMPLES
-Virus search: 
+# EXAMPLES
+## Virus search: 
 	python Virusfishing.V1.1/Virusfishing.py search 
-Viral genome assemble:
+## Viral genome assemble:
 	python Virusfishing.V1.1/Virusfishing.py assemble
-Splice junction detection using raw data:
+## Splice junction detection using raw data:
 	python Virusfishing.V1.1/Virusfishing.py splicing
 
 Only create a shell script for summarizing the alignment file:
@@ -97,18 +97,19 @@ Virus search without a NT database:
 	Perl Virusfishing.V1.1/bin/Virus_Search.pl -i assemble.fa -v virus.db -outpre candidateviral
 Then, use the candidate viral sequences to blastn against NT database online
 
-CONTRIBUTORS
+# CONTRIBUTORS
 Chengran Zhou; Guanliang Meng; Wenhui Song; Jinmin Ma
 
-CONTACT US
+# CONTACT US
 Email: zhouchengran at genomics dot cn
        mengguanliang at genomics dot cn
        songwenhui at genomics dot cn
        majinmin at genomics dot cn
 
-CITATION
-Zhou CR, Liu SL, Song WH, Luo Si, Meng GL, Yang CT, Ma JM, Zhao Y, Wang H, Zhou X (2018) Characterization of viral RNA splicing using whole-transcriptome datasets from host speices. Accepted.
+# CITATION
+Zhou, C., Liu, S., Song, W., Luo, S., Meng, G., Yang, C., Yang, H., Ma, J., Wang, L., Gao, S. and Wang, J., 2018. Characterization of viral RNA splicing using whole-transcriptome datasets from host species. Scientific reports, 8(1), p.3273.
+DOI: 10.1038/s41598-018-21190-7
 
-LATEST RELEASE
+# LATEST RELEASE
 Version 1.1 201801
 
