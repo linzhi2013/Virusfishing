@@ -20,7 +20,7 @@ Virusfishing version 1.1 201801
 ## Wrappper script
 	Virusfishing.py: the wrapper script to run other Perl scripts to do the work you choose.
 
-## Eight Perl scripts in Virusfishing.V1.1/bin/
+## Eight Perl scripts in `Virusfishing.V1.1/bin/`
 	Search virus:
 		Virus_Search.pl: search viruses in assemblies
 		Virus_false_removal.pl: removal false positive according to the taxonomy
@@ -95,23 +95,23 @@ You need to install following libraries directories to your $ LD_LIBRARY_PATH:
 # EXAMPLES
 1. Virus search: 
 	
-	python Virusfishing.V1.1/Virusfishing.py search 
+		python Virusfishing.V1.1/Virusfishing.py search 
 	
 2. Viral genome assemble:
 	
-	python Virusfishing.V1.1/Virusfishing.py assemble
+		python Virusfishing.V1.1/Virusfishing.py assemble
 	
 3. Splice junction detection using raw data:
 	
-	python Virusfishing.V1.1/Virusfishing.py splicing
+		python Virusfishing.V1.1/Virusfishing.py splicing
 
 4. Only create a shell script for summarizing the alignment file:
 
-	perl Virusfishing.V1.1/bin/Alignmentout_Stat.pl -in in.map -ref ref.fa -type map
+		perl Virusfishing.V1.1/bin/Alignmentout_Stat.pl -in in.map -ref ref.fa -type map
 	
 5. Virus search without a NT database:
 
-	Perl Virusfishing.V1.1/bin/Virus_Search.pl -i assemble.fa -v virus.db -outpre candidateviral
+		Perl Virusfishing.V1.1/bin/Virus_Search.pl -i assemble.fa -v virus.db -outpre candidateviral
 
 Then, use the candidate viral sequences to blastn against NT database online
 
@@ -119,9 +119,9 @@ Then, use the candidate viral sequences to blastn against NT database online
 Chengran Zhou; Guanliang Meng; Wenhui Song; Jinmin Ma
 
 # CONTACT US
-Email: zhouchengran at genomics dot cn
-       mengguanliang at genomics dot cn
-       songwenhui at genomics dot cn
+Email: zhouchengran at genomics dot cn   
+       mengguanliang at genomics dot cn   
+       songwenhui at genomics dot cn   
        majinmin at genomics dot cn
 
 # CITATION
